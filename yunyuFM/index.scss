@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  cursor: default;
+  user-select: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+ul, li {
+  list-style: none;
+}
+
+#app {
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .6);
+  width: 480px;
+  margin: 90px auto;
+  background: transparent;
+}
+
+/* ——————> fm 头部样式 header <—————— */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 480px;
+  height: 50px;
+  background: #009999;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+  /* 左侧图标 */
+  .icon-left {
+    margin-left: 20px;
+    i {
+      display: none;
+      color: #e8edea;
+      &:nth-child(1) {
+        display: block;
+      }
+    }
+  }
+  /* 右侧图标 */
+  .icon-right {
+    margin-right: 20px;
+    i {
+      color: #e8edea;
+    }
+  }
+  /* 中间标题 */
+  .icon-middle {
+    font-family: "STHupo", sans-self;
+    font-size: 16pt;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: #dae7e4;
+    letter-spacing: 1px;
+  }
+}
+
+/* ——————> fm 频道样式 nav <—————— */
+
+.nav {
+  width: 480px;
+  height: 50px;
+  background: #393c39;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 28px;
+  .pre > i, .next > i {
+    color: #e8edea;
+  }
+  .channel {
+    width: 326px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    li {
+      font-family: "\5FAE\8F6F\96C5\9ED1", sans-self;
+      font-size: 16pt;
+      color: #6c6f6c;
+      span {
+        font-size: 10pt;
+      }
+      &:nth-child(2) {
+        font-size: 18pt;
+        color: #e8edea;
+      }
+      &:nth-child(2) > span {
+        font-size: 12pt;
+      }
+    }
+  }
+}
+
+/* ——————> fm 音乐信息 封面 标题 作者 控制器 main <—————— */
+.main {
+  width: 480px;
+  height: 175px;
+  padding: 0 28px;
+  background: #e8edea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .picture {
+    display: block;
+    width: 120px;
+    height: auto;
+    margin-top: -2px;
+    box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, .6)
+  }
+  .controlCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 248px;
+    height: 120px;
+    .line1, .line2, .line4 {
+      display: flex;
+      justify-content: space-between;
+    }
+    .line1 > .auther, .line2 > .title {
+      font-family: "Helvetica", sans-self;
+      font-weight: bold;
+      font-size: 14pt;
+    }
+    .line1 {
+      margin-top: 6px;
+      .auther {
+        color: #5d5f5e;
+      }
+      .playBtn {
+        background: transparent;
+        color: #3f413f;
+        i:last-child {
+          display: none;
+        }
+      }
+    }
+    .line2 {
+      margin-top: -14px;
+      .title {
+        color: rgba(0, 0, 0, .8);
+      }
+      .playNow {
+        font-weight: bold;
+        color: #82bbb0;
+      }
+    }
+    .line3 {
+      margin-top: -6px;
+      width: 248px;
+      height: 5px;
+      background: #ced9d3;
+      span {
+        display: block;
+        background: #91bdb4;
+        height: 5px;
+        width: 10%;
+      }
+    }
+    .line4 {
+      i {
+        color: #3f413f;
+      }
+      .fa-heart {
+        color: #d9414e;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
